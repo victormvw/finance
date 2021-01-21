@@ -26,14 +26,15 @@ h2 {
 }
 /* Header ========================== */
 header {
-    background: #5f9c49;
+    background: #2e8f0b;
     padding: 2rem 0 10rem;
     text-align: center;
 }
 
 #logo { 
     color: #fff;
-    font-weight: 100;
+    font-weight: 500;
+    
 }
 
 /* Balance ========================== */

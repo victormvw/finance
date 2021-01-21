@@ -1,2 +1,3 @@
 # finance
-Projeto de site para gerenciamento de financias pessoal
+Balanço pessoal de gastos do mês
+projeto iniciado no Discovery da Rocktseat
