@@ -10,12 +10,15 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap"
         rel="stylesheet">
-
+    <link rel="shortcut icon" href="./assets/total.svg" type="image/x-icon">    
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/total.svg" type="image/x-icon">    
+    <meta name="description" content="Um WEb site sei la">
 </head>
 
 <body>
     <header>
-        <img src="./assets/logo.svg" alt="Logo Dev.finance">
+        <a href="./index.html"><img src="./assets/logo.svg" alt="Logo Dev.finance"></a>
+        
     </header>
 
     <main class="container">
@@ -28,7 +31,7 @@
                     <img src="./assets/income.svg" alt="Imagens de Entradas">
 
                 </h3>
-                <p>R$ 5.156,00</p>
+                <p id="incomeDisplay"></p>
             </div>
 
             <div class="card">
@@ -36,7 +39,7 @@
                     <span>Saídas</span>
                     <img src="./assets/expense.svg" alt="Imagem de Saida">
                 </h3>
-                <p>R$ 700,00</p>
+                <p id="expenseDisplay"></p>
             </div>
 
             <div class="card total">
@@ -44,7 +47,7 @@
                     <span>Total</span>
                     <img src="./assets/total.svg" alt="Total">
                 </h3>
-                <p>R$ 4.456,00</p>
+                <p id="totalDisplay"></p>
             </div>
 
         </section>
@@ -66,30 +69,6 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td class="description">Luz</td>
-                        <td class="expense">- R$500,00</td>
-                        <td class="date">20/01/2020</td>
-                        <td><img src="./assets/minus.svg" alt="Remover auteração"></td>
-                    </tr>
-                    <tr>
-                        <td class="description">Criação website</td>
-                        <td class="income">R$5.000,00</td>
-                        <td class="date">20/01/2020</td>
-                        <td><img src="./assets/minus.svg" alt="Remover auteração"></td>
-                    </tr>
-                    <tr>
-                        <td class="description">Internet</td>
-                        <td class="expense">- R$200,00</td>
-                        <td class="date">20/01/2020</td>
-                        <td><img src="./assets/minus.svg" alt="Remover auteração"></td>
-                    </tr>
-                    <tr>
-                        <td class="description">Extra</td>
-                        <td class="income">R$156,00</td>
-                        <td class="date">26/01/2020</td>
-                        <td><img src="./assets/minus.svg" alt="Remover auteração"></td>
-                    </tr>
                 </tbody>
             </table>
         </section>
@@ -101,7 +80,7 @@
         <div class="modal">
             <div id="form">
                 <h2>Nova Transação</h2>
-                <form action="">
+                <form action="" onsubmit="Form.submit(event)">
                     <div class="input-group">
                             <label class="sr-only"
                             for="description">Descrição</label>
@@ -147,28 +126,11 @@
 
     
     <footer>
-        <p>2021-dev.finance$</p>
+        <p><a class="footeer" href="./index.html">2021-dev.finance$</a></a></p>
     </footer>
 
-    <script>
-        const Modal = {
-            open(){
-                // Abrir modal
-                // Adicionar a class active ao modal
-                document
-                .querySelector('.modal-overlay')
-                .classList.add('active')
-                
-            },
-            close(){
-                //Fechar modal
-                //Remover a classe active ao modal
-                document
-                .querySelector('.modal-overlay')
-                .classList.remove('active')
-            }
-        }
-    </script>
+    <script src="scripts.js"></script>
+    
 
 </body>
 
