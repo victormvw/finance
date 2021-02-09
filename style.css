@@ -1,8 +1,8 @@
-/* Global ===================== */
+/* Global ===================== #363f5f */
 :root {
-    --dark-blue: #363f5f;
+    --dark-blue: #05070e;
     --green: #49AA26;
-    --light-green: #3dd705;
+    --light-green: #5bdd2b;
     --red: #e92929;
 
 }
@@ -18,7 +18,11 @@ html {
 }
 
 body {
-    background: #f0f2f5;
+    background-image: url(./assets/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  position: relative;
+    /*background: #6d431c; /*#5a5b5c; /*f0f2f5*/
     font-family:'Poppins', sans-serif
 }
 
@@ -81,6 +85,10 @@ button:hover {
 .button.new {
     display: inline-block;
     margin-bottom: .8rem;
+    font-size: 18px;
+    color:#07500d
+    
+    
 }
 
 .button.cancel {
@@ -103,7 +111,8 @@ button:hover {
 
 /* Header ===================== */
 header {
-    background: #2D4A22;
+    
+    background: #9cc7f8;
     padding: 2rem 0 10rem;
     text-align: center;
 }
@@ -115,17 +124,17 @@ header {
 
 /* Balance ===================== */
 #balance {
-    margin-top: -8rem;
+    margin-top: -4.5rem;
 }
 
 #balance h2 {
-    color:white;
+    color:rgb(216, 211, 211);
     margin-top:0;
 }
 
 /* Cards ===================== */
 .card {
-    background: white;
+    background: rgb(255, 255, 255);
     padding: 1.5rem 2rem;
     border-radius: 0.25rem;
 
@@ -287,10 +296,23 @@ input {
 /* Footer ===================== */
 footer {
     text-align: center;
-    padding: 4rem 0 2rem;
-    color: var(--dark-blue);
+    padding: 4rem 0 2rem ;
+    font-size: 18px;
+    
+    
+}
+.social{
+    padding-top: 1.1rem;
+}
 
-    opacity: 0.6;
+footer a{
+    
+    color: var(--dark-blue);
+    opacity: 0.9;
+    
+}
+footer a:hover{
+    color: #ff1e1e;
 }
 
 
